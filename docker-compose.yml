@@ -1,0 +1,19 @@
+version: "3.2"
+
+services:
+
+  cowin1:
+    image: cowin:latest
+    build:
+      context: .
+    restart: always
+    entrypoint: python3
+    volumes: 
+      - ./app.py:/app/app.py
+    command: app.py
+    network_mode: host
+    environment: 
+        - DISTRICT_ID=DISTRICT_ID
+        - LOCATION=LOCATION
+        - TELEGRAM_TOKEN_ID=TELEGRAM_TOKEN_ID
+        - TELEGRAM_CHAT_ID=TELEGRAM_CHAT_ID
