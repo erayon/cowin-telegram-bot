@@ -2,7 +2,7 @@ version: "3.2"
 
 services:
 
-  cowin1:
+  cowin:
     image: cowin:latest
     build:
       context: .
