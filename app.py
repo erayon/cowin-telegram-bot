@@ -121,7 +121,7 @@ def job():
         cowin.send_msg()
 
 if __name__ == "__main__":
-    schedule.every(5).seconds.do(job)
+    schedule.every(5).minutes.do(job)
     while True:
         schedule.run_pending()
         time.sleep(1)
