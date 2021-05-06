@@ -12,7 +12,7 @@ Todo:
 run the following in terminal
 ```
 DISTRICT_ID= <your_district_id>
-LOCATION=<your_district_id> [ If multiple sep by comma, Ex. konnagar,uttarpara ]
+LOCATION=<your_location/place> [ If multiple sep by comma, Ex. konnagar,uttarpara ]
 TELEGRAM_TOKEN_ID= <your_telegram_token>
 TELEGRAM_CHAT_ID=<your_telegram_chat_id>
 
